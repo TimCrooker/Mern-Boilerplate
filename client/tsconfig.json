@@ -1,0 +1,46 @@
+{
+  "compilerOptions": {
+    "outDir": "./dist/",
+    "target": "es5",
+    "allowJs": true,
+    "strict": true,
+    "forceConsistentCasingInFileNames": true,
+    "noEmit": true,
+    "esModuleInterop": true,
+    "module": "commonjs",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "jsx": "react",
+    "baseUrl": ".",
+    "paths": {
+      "@Actions": ["src/Actions"],
+      "@Components/*": ["src/Components/*"],
+      "@Components": ["src/Components"],
+      "@Definitions/*": ["src/Definitions/*"],
+      "@Definitions": ["src/Definitions"],
+      "@Interfaces": ["src/Interfaces"],
+      "@Interfaces/*": ["src/Interfaces/*"],
+      "@Pages/*": ["pages/*"],
+      "@Reducers": ["src/Redux/Reducers"],
+      "@Reducers/*": ["src/Redux/Reducers/*"],
+      "@Redux": ["src/Redux"],
+      "@Redux/*": ["src/Redux/*"],
+      "@Server/*": ["server/*"],
+      "@Services": ["src/Services"],
+      "@Services/*": ["src/Services/*"],
+      "@Static/*": ["public/static/*"],
+      "@Styled/*": ["src/Styled/*"],
+      "@Test/*": ["test/*"]
+    }
+  },
+  "exclude": [
+    "node_modules",
+    "dist",
+    ".next",
+    "bundles",
+    "coverage",
+    "test/*"
+  ],
+  "include": [ "**/*.ts", "**/*.tsx", "jest.config.js"]
+}
